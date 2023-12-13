@@ -5,5 +5,8 @@ const app = http.createServer((request, response) => {
     response.end('Welcome Our NodeJS');
 })
 
-app.listen(3001)
-console.log('Server is Running : 3001');
+//variable declearation
+const PORT=3001;
+const HOSTNAME='127.0.0.1';
+app.listen(PORT)
+console.log(`Server is Running http://${HOSTNAME}:${PORT}`);
