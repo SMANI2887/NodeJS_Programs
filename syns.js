@@ -4,5 +4,5 @@ fs.readFile('E:/MANI/Project/Zen_class/NodeJS/Practice/test.txt','utf8',(err, da
     if(err){
         console.error(err);
     }
-    console.log(data);
+    console.log(data.split('\n')); // line by line arrange
 })
